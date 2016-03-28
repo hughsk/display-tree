@@ -1,0 +1,23 @@
+{
+  "name": "display-tree",
+  "version": "1.0.0",
+  "devDependencies": {
+    "camera-spin": "^3.0.1",
+    "canvas-fit": "^1.5.0",
+    "face-normals": "0.0.0",
+    "gl-geometry": "^3.1.0",
+    "gl-mat4": "^1.1.4",
+    "gl-shader": "^4.2.0",
+    "glslify": "^5.0.2",
+    "icosphere": "^1.0.0",
+    "raf": "^3.1.0",
+    "tape": "^4.4.0",
+    "unindex-mesh": "^2.0.0"
+  },
+  "scripts": {
+    "test": "node test | tspec"
+  },
+  "dependencies": {
+    "camera-spin": "^3.0.1"
+  }
+}
