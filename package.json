@@ -1,6 +1,29 @@
 {
   "name": "display-tree",
+  "description": "A JavaScript tree implementation designed to be efficiently \"flattened\" and sorted for realtime rendering.",
   "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test | tspec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughsk/display-tree.git"
+  },
+  "keywords": [
+    "display",
+    "tree",
+    "list",
+    "graph",
+    "scene",
+    "render"
+  ],
+  "author": "Hugh Kennedy <hughskennedy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hughsk/display-tree/issues"
+  },
+  "homepage": "https://github.com/hughsk/display-tree#readme",
   "devDependencies": {
     "camera-spin": "^3.0.1",
     "canvas-fit": "^1.5.0",
@@ -11,13 +34,7 @@
     "glslify": "^5.0.2",
     "icosphere": "^1.0.0",
     "raf": "^3.1.0",
-    "tape": "^4.4.0",
+    "tape": "^4.5.1",
     "unindex-mesh": "^2.0.0"
-  },
-  "scripts": {
-    "test": "node test | tspec"
-  },
-  "dependencies": {
-    "camera-spin": "^3.0.1"
   }
 }
