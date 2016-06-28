@@ -18,7 +18,7 @@ test('#sort()', function (t) {
   )
 
   var didFire = false
-  const sortById = root.sort(function (a, b) {
+  const sortById = root.list(function (a, b) {
     didFire = true
     return getId(a) - getId(b)
   })
@@ -38,17 +38,6 @@ test('#sort()', function (t) {
   const id3 = sortById().map(getId).slice()
   t.deepEqual(id3, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 'sorts nodes again, including new entries')
   t.ok(didFire, 'sort function fired')
-
-  didFire = false
-  sortById().map(getId).slice()
-  t.notOk(didFire, 'sort function does not fire before flushing')
-  sortById.flush()
-  sortById().map(getId).slice()
-  t.ok(didFire, 'sort function fired after flushing')
-
-  root.each(function (node) {
-    console.log(node.sortVersion)
-  })
 
   t.end()
 })
