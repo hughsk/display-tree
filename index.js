@@ -75,6 +75,8 @@ DisplayTreeNode.prototype.remove = function (child) {
   var idx = children.indexOf(child)
   if (idx !== -1) children.splice(idx, 1)
   child.parent = null
+  
+  this.resetLists()
 
   return this
 }
