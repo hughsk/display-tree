@@ -1,7 +1,7 @@
 {
   "name": "display-tree",
   "description": "A JavaScript tree implementation designed to be efficiently \"flattened\" and sorted for realtime rendering.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "test": "node test | tspec"
