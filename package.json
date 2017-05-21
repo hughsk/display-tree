@@ -37,5 +37,8 @@
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0",
     "unindex-mesh": "^2.0.0"
+  },
+  "dependencies": {
+    "remove-array-items": "^1.0.0"
   }
 }

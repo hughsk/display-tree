@@ -1,5 +1,7 @@
 'use strict'
 
+var splice = require('remove-array-items')
+
 module.exports = DisplayTreeNode
 
 function DisplayTreeNode (data) {
@@ -73,9 +75,9 @@ DisplayTreeNode.prototype.remove = function (child) {
   if (children === null) return this
 
   var idx = children.indexOf(child)
-  if (idx !== -1) children.splice(idx, 1)
+  if (idx !== -1) splice(children, idx, 1)
   child.parent = null
-  
+
   this.resetLists()
 
   return this
